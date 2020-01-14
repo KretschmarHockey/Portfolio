@@ -1,0 +1,20 @@
+Name: Josh Kretschmar
+Student ID: 16939790
+
+The SQL commands used for creating the database are:
+
+CREATE TABLE IF NOT EXISTS $sql_tble (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(32) NOT NULL,
+    phone VARCHAR(16) NOT NULL,
+    unit VARCHAR(32),
+    street_number VARCHAR(8) NOT NULL,
+    street_name VARCHAR(64) NOT NULL,
+    pick_suburb VARCHAR(32) NOT NULL,
+    dest_suburb INT(32) NOT NULL,
+    pick_date_time TIMESTAMP NOT NULL,
+    reference INT(8) NOT NULL,
+    book_date_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    status VARCHAR(16) NOT NULL DEFAULT 'unassigned',
+    PRIMARY KEY (id)
+)

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="content_type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="MakeBooking.js"></script>
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <h1>Taxi Booking System</h1>
+    <!--Name: Joshua Kretschmar
+        Student ID: 16939790
+        Email: mhw9623@aut.ac.nz
+
+        I declare that this assignment is my individual work. I have not worked collaboratively nor have I copied from
+        any other student's work or from any other source -->
+    <div>
+        <p> <label for="name">Customer Name: </label>
+            <input type="text" name="name" id="name" /></p>
+
+        <p> <label for="phone">Contact Phone: </label>
+            <input type="text" name="phone" id="phone" /></p>
+
+        <p> <b>Pick Up Address: </b><br>
+            <label for="unit">Unit (if applicable): </label>
+            <input type="text" name="unit" id="unit" /><br>
+            <label for="street_number">Street Number: </label>
+            <input type="text" name="street_number" id="street_number" /><br>
+            <label for="street_name">Street Name: </label>
+            <input type="text" name="street_name" id="street_name" /><br>
+            <label for="pick_suburb">Suburb: </label>
+            <input type="text" name="pick_suburb" id="pick_suburb" /></p>
+
+        <p> <label for="dest_suburb">Destination Suburb:</label>
+            <input type="text" name="dest_suburb" id="dest_suburb" /></p>
+
+        <p> <label for="date_time">Pick Up Date and Time:</label>
+            <input type="datetime-local" name="date_time" id="date_time" /></p>
+
+        <input type="submit" value="Make Booking" onClick="makeBooking();" />
+    </div>
+
+
+    <div id="response"></div>
+
+
+</body>
+
+</html>

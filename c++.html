@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Programming Portfolio 16939790</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body class="light-grey">
+    <div class="content" style="max-width: 1400ox;">
+        <!-- Header -->
+        <header class="container center padding-32">
+            <h1><b>Programming Portfolio</b></h1>
+            <p>COMP710 - 16939790 - Joshua Kretschmar</p>
+        </header>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Programming Portfolio</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="c++.html">C++</a></li>
+                        <li><a href="java.html">Java</a></li>
+                        <li><a href="python.html">Python</a></li>
+                        <li><a href="php.html">Web Development</a></li>
+                        <li><a href="flutter.html">Flutter/Dart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Blog Entries -->
+        <div class="col l8 s12">
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Bouncer</b></h3>
+                    <h5><span class="opacity">August 21</span></h5>
+                </div>
+
+                <div class="container">
+                    <p>I created a playership that bounces around the screen. A green and red checkerboard is also
+                        displayed at the top left. The center of each square has a blue line connecting with the
+                        playership. Each of these objects can be hidden by
+                        pressing 1, 2, and 3 respectively. The game object contains 3 booleans that determine whether an
+                        object should be drawn. It is very important to make sure everything is being drawn in the right
+                        order. I initially had the checkerboard
+                        being drawn after/over blue lines.
+                    </p>
+                </div>
+
+                <img src="Bouncer.JPG" style="width:100%">
+                <img src="Bouncer Code.JPG" style="width:100%">
+                <video controls style="width:100%">
+                    <source src="Bouncer Vid.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Space Invaders</b></h3>
+                    <h5><span class="opacity">August 23</span></h5>
+                </div>
+
+                <div class="container">
+                    <p>I tried to make a bounds class for that would be contained in the all entities. It would’ve
+                        contained all the math for calculating any boundaries. I realised that I was wasting a lot of
+                        time making it and that it should be something
+                        that I do later.
+                    </p>
+                </div>
+
+                <img src="Space Invaders.JPG" style="width:100%">
+                <video controls style="width:100%">
+                    <source src="Space Invaders Vid.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Playership</b></h3>
+                    <h5><span class="opacity">August 25</span></h5>
+                </div>
+
+                <div class="container">
+                    <p>I’ve created a different playership that can move horizontally and vertically. The ship sprite
+                        changes direction when moving horizontally. The ship can move with the joystick with ease.
+                    </p>
+                </div>
+
+                <img src="shipleft.JPG" style="width:100%">
+                <img src="shipright.JPG" style="width:100%">
+            </div>
+
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Joystick Fix</b></h3>
+                    <h5><span class="opacity">August 30</span></h5>
+                </div>
+
+                <div class="container">
+                    <p>An issue I found with the spaceship movement is that the left joystick on the controller I’m
+                        using doesn’t stay perfectly in the middle. This causes the ship to move, when the play probably
+                        isn’t wanting it to move. To fix this, I
+                        created a minimum limit that the joystick has to reach before it’ll move the ship.</p>
+                </div>
+
+                <img src="Joystick.PNG" style="width:50%">
+            </div>
+
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>FMOD</b></h3>
+                    <h5><span class="opacity">September 18</span></h5>
+                </div>
+
+                <div class="container">
+                    <p>While implementing Fmod, I wasn’t sure to have a sound handler class or to have everything coded
+                        in the game class. The benefit of having a sound handler class is that it creates clear
+                        divisions of functionality. If sound within the
+                        game needs to be changed, a sound handler class will be easier to focus on. I thought for this
+                        project though, since the sound system is very simple and direct, I decided to code everything
+                        in the game class.
+                    </p>
+                </div>
+
+                <img src="FMOD.PNG" style="width:100%">
+                <video controls style="width:100%">
+                    <source src="FMOD Vid.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Enemy Movement</b></h3>
+                    <h5><span class="opacity">September 23</span></h5>
+                </div>
+
+                <div class="container">
+                    <p>I wanted the standard enemy ships to look like a human could make the moves. I wanted sudden
+                        change in directions sometimes. The algorithm design I went with separates the X and Y
+                        coordinates when it is being processed.</p>
+                    <p>A random X and Y coordinate is generated as well as a random X and Y velocity. The enemy ship
+                        then travels to the coordinates at the velocity. Due to the fact that the coordinates and
+                        velocity is random, the enemy ship can arrive at
+                        the X coordinate before it arrives to the Y coordinate. If this happens, the enemy ship stays at
+                        that X coordinate, until the Y coordinate is reached. Once the X and Y coordinates are reached,
+                        then a random X and Y coordinate and
+                        X and Y velocity is generated again.</p>
+                </div>
+
+                <img src="Enemy Movement.JPG" style="width:50%">
+                <video controls style="width:100%">
+                    <source src="Enemy Movement Vid.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Levels</b></h3>
+                    <h5><span class="opacity">September 24</span></h5>
+                </div>
+
+                <div class="container">
+                    <p>I’ve created different levels that restart each time all pods are collected. I’ve yet to
+                        implement the different level data such as what enemies and power ups can spawn at each level.
+                    </p>
+                    <p>For the menu background I’m using a picture by Francesco Ungaro. The image is free to use and no
+                        attribution required.</p>
+                </div>
+                <video controls style="width:100%">
+                    <source src="Levels Vid.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Menu</b></h3>
+                    <h5><span class="opacity">September 25</span></h5>
+                </div>
+
+                <div class="container">
+                    <p>The menu contains 4 buttons that can be scrolled through with the D-Pad. I struggled to find out
+                        how to implement the D-Pad as I didn’t know it was called a hat. Once I figured that out, it was
+                        very easy to implement. The Menu object
+                        contains a selected enum that corresponds to one of the buttons. This allows for the menu to
+                        know which button is selected.</p>
+                </div>
+                <video controls style="width:100%">
+                    <source src="Menu Vid.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Menu Redesign</b></h3>
+                    <h5><span class="opacity">September 26</span></h5>
+                </div>
+
+                <div class="container">
+                    <p>While creating the menu my initial design was to have black text on a white rectangle. The white
+                        rectangles would be green when selected. However, when I loaded the background image. The first
+                        rectangle would remain black. I spent
+                        an hour trying to solve the problem. I ended up just having the text be white and turn green.
+                    </p>
+                </div>
+
+                <img src="menu.JPG" style="width:100%">
+            </div>
+
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>High Score</b></h3>
+                    <h5><span class="opacity">September 27</span></h5>
+                </div>
+
+                <div class="container">
+                    <p>I created a Scoreboard that can be displayed. The scores are stored in an .ini file. At the
+                        moment the scores are not updated. I used a lot of time (3+ hours) to get this working. First I
+                        struggled to find a way to store the scoreboard
+                        to be read from the Scoreboard object. My knowledge of passing by reference really affected the
+                        time. I kept passing on pointers to store in vectors to be read. However, when I would change to
+                        the next line of the .ini file it
+                        would change all the values in the vectors. This has made me learn about being careful of
+                        passing by reference and pointer. The next issue I had was that the way I was storing the
+                        highscores was creating memory leaks. I ended up
+                        having to completely redo how the highscores were stored. The game object now stores the
+                        highscores and can be accessed by the Scoreboard object.
+                    </p>
+                </div>
+
+                <img src="HighScore.JPG" style="width:100%">
+            </div>
+
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Individual Game Complete</b></h3>
+                    <h5><span class="opacity">September 28</span></h5>
+                </div>
+
+                <div class="container">
+                    <p>I've completed the game to a standard where I am happy to submit it. Tomorrow I will check for
+                        bugs that I can fix.
+                    </p>
+                </div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/IuKIKqTZ2RI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+</body>
+
+</html>

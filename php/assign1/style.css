@@ -1,0 +1,39 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+ul {
+    background: #2222FF;
+    padding: 5px;
+}
+  
+ul li {
+    background: #00CCff;
+    padding: 2px;
+    margin-left: 20px;
+  }
+
+input[type=text] {
+    width: 25%;
+    padding: 5px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+}
+
+#status_code, #status {
+    border: 2px solid red;
+    border-radius: 4px;
+}

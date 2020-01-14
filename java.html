@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Programming Portfolio 16939790</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body class="light-grey">
+    <div class="content" style="max-width: 1400ox;">
+        <!-- Header -->
+        <header class="container center padding-32">
+            <h1><b>Programming Portfolio</b></h1>
+            <p>COMP710 - 16939790 - Joshua Kretschmar</p>
+        </header>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Programming Portfolio</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="c++.html">C++</a></li>
+                        <li class="active"><a href="java.html">Java</a></li>
+                        <li><a href="python.html">Python</a></li>
+                        <li><a href="php.html">Web Development</a></li>
+                        <li><a href="flutter.html">Flutter/Dart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Blog Entries -->
+        <div class="col l8 s12">
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+                    <h3><b>Livestream Graphics</b></h3>
+                </div>
+
+                <div class="container">
+                    <p>
+                        My first side project was a problem that I wanted to solve. I have been the livestream director
+                        for the Botany Swarm of the New Zealand Ice Hockey League. In 2018, I wanted to have my
+                        livestream stand out as being the best games to watch in the country. So I decided to put my
+                        programming skill to work. The thing that was lacking most from the watching the games was that
+                        not enough information was being displayed to the viewer. So I designed some graphics to display
+                        on stream. Due to the software used to livestream, I was limited to creating SVG graphics for
+                        display. I then created a program that edits the SVG graphics to display the information
+                        inputted.
+                    </p>
+                    <p>
+                        I got to use this software for all the home games at the Botany rink. The New Zealand ice hockey
+                        community greatly appreciated the contribution I had to the livestream.
+                    </p>
+                    <p>
+                        In the same year I started making the software, the Canadian and American national ice hockey
+                        teams came to play in the Spark Arena. Due to the software I created, I was asked to be the
+                        livestream director for their game. That will always be memory I'll never forget, especially as
+                        I got meet the players of both teams. I was also asked to be the livestream director for New
+                        Zealand Winter Games in Queenstown. However, due to university commitments, I wasn't able to
+                        attend.
+                    </p>
+
+                </div>
+
+                <img src="LivestreamController.JPG" style="width:50%">
+            </div>
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+                    <h3><b>Features</b></h3>
+                </div>
+
+                <div class="container">
+                    <p>
+                        The video below is recorded live footage of the software being used.
+                    </p>
+                </div>
+
+                <video controls style="width:100%">
+                    <source src="Hockey.mp4" type="video/mp4">
+                </video>
+                <div class="container">
+                    <p>
+                        In the first clip the officials names are displayed underneath the scoreboard. These official
+                        names are selected using the 'Officials' button. This then updates the officials graphic to
+                        display the selected names.
+                    </p>
+                    <p>
+                        The first clip also shows the team lineups underneath the scoreboard. The lineup can be entered
+                        using the 'Lines' button. This then updates 2 graphics. The one shown in the first clip, and the
+                        graphic shown in the second clip.
+                    </p>
+                </div>
+                <img src="Officials.JPG" style="width:50%">
+                <img src="Lines.JPG" style="width:100%">
+
+                <div class="container">
+                    <p>
+                        The third clip shows the standings of the league. The graphic is updated automatically, with the
+                        software collecting that information from a Hydra database maintained by the NZIHF.
+                    </p>
+                    <p>
+                        The fourth clip shows the player profile. The graphic can be changed to show whatever player is
+                        selected on the main screen. When a New Zealand Ice Hockey League game is played it collects the
+                        player's stats from a Hydra database maintained by the NZIHF. The clip shows it being used in
+                        the USA vs Canada game. This information was collected from a database I was storing on the same
+                        machine. I was manually updating the database during the game.
+                    </p>
+                    <p>
+                        The 'Nameplate' buttons allows you type in text for a nameplate to display on the screen. This
+                        was used to introduce the singers of the national anthems. The 'Point Bar' button updates a
+                        graphic showing the goal scorer and assists. The graphic is displayed underneath the scoreboard
+                        like the lineups and officials. That information is collected from the Hydra database of the
+                        live game stats.
+                    </p>
+                    <p>
+                        I wanted to create software for the scoreboard as well. The one being used during the game is
+                        licensed software. I was struggling to understand how threads worked at that time. I decided to
+                        put that feature on hold. With another year of programming experience, I'm certain I'd be able
+                        to solve it now.
+                    </p>
+                    <p>
+                        Once I have more time to work on side projects, this project is 2nd on my list to complete. This
+                        side project has helped me get a job for the Kelowna Rockets (from the Canadian Hockey League)
+                        as a stats analyst. I am the first New Zealander to be working at this level of ice hockey.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-4 margin white">
+                <div>
+                    <div class="container">
+                        <h3><b>OpenGL</b></h3>
+                    </div>
+
+                    <div class="container">
+                        <p>
+                            For Computer Graphics Programming paper I designed a 3D model of an ice hockey player. This
+                            was achieved by using free models online and reading them in using an OBJ file reader I
+                            created. The spheres were drawn using OpenGL's method.
+                        </p>
+
+                    </div>
+
+                    <img src="HockeyModel.JPG" style="width:50%">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

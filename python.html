@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Programming Portfolio 16939790</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body class="light-grey">
+    <div class="content" style="max-width: 1400ox;">
+        <!-- Header -->
+        <header class="container center padding-32">
+            <h1><b>Programming Portfolio</b></h1>
+            <p>COMP710 - 16939790 - Joshua Kretschmar</p>
+        </header>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Programming Portfolio</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="c++.html">C++</a></li>
+                        <li><a href="java.html">Java</a></li>
+                        <li class="active"><a href="python.html">Python</a></li>
+                        <li><a href="php.html">Web Development</a></li>
+                        <li><a href="flutter.html">Flutter/Dart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Blog Entries -->
+        <div class="col l8 s12">
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Django Tree App</b></h3>
+                </div>
+
+                <div class="container">
+                    <p>
+                        For Contemporary Issues in Software Engineering paper, we created a tree purchasing store. My
+                        job was to create the shopping cart functionality of the web app.
+                    </p>
+                    <p>
+                        This was my first experience using python, so I really struggled to get going. Django has an
+                        admin database that works very well with shopping cart systems. All of the items are stored on
+                        the database. Each of the 'Add to Cart' buttons contains the id of the tree. This is then stored
+                        in the logged in users shopping cart.
+                    </p>
+                    <a href="http://cise-tree-app.herokuapp.com/">Link to website</a><br>
+                </div>
+                <img src="views.JPG" style="width:50%">
+                <img src="models.JPG" style="width:50%">
+                <video controls style="width:100%">
+                    <source src="TreeApp.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Named Entity Recognition</b></h3>
+                </div>
+
+                <div class="container">
+                    <p>
+                        For Text and Vision Intelligence paper, we created a named entity recognition script. This reads
+                        TXT files in a folder and then saves the output as each file in different two folders. The first
+                        folder has a list of all the entities by category. The second folder has a list of all the
+                        entities with the category tag next to it.
+                    </p>
+                    <p>
+                        This was achieved using the NLTK package. Once the files are read in, all the words are
+                        tokenized and then tagged on the words part of speech. The nouns are then chunked into noun
+                        phrases which are also tagged by entity recognition. With the test data the accuracy was 68.33%
+                    </p>
+                </div>
+
+                <img src="TVI.JPG" style="width:100%">
+                <img src="processed.JPG" style="width:20%">
+                <img src="chunked.JPG" style="width:34.5%">
+            </div>
+
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Spam Detection</b></h3>
+                </div>
+
+                <div class="container">
+                    <p>
+                        For Data Mining and Knowledge Engineering paper, we tested spam detection classifiers. This was
+                        done using the enron email corpus dataset. We needed lots of different options for training and
+                        testing our models.
+                    </p>
+                    <p>
+                        We had two options for spliting the training and testing data. Either randomly splitting the
+                        emails
+                        into training and testing data, or using certain folders as training and testing data. We then
+                        had three different models to be trained. Naive Bayes, Neural Network or a Logistic Regression
+                        model.
+                    </p>
+                    <p>
+                        The output of the program prints out the confusion matrix, classification report and accuracy of
+                        each model. Our most accurate model was the Neural Network when we randomly split the training
+                        and test data with 98.25% accuracy. Our worst performing model was the Neural Network when we
+                        chose specific folders for the training and testing data with 57.10% accuracy.
+                    </p>
+                    <p>
+                        This was achieved using the NLTK package for pre-processing the unstructured data. We also used
+                        the sklearn package for vectorizing the words, randomly splitting the training and testing data,
+                        and using and analyzing the models.
+                    </p>
+                </div>
+
+                <img src="dmke.JPG" style="width:100%">
+            </div>
+        </div>
+</body>
+
+</html>

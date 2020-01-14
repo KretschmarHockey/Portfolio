@@ -1,0 +1,24 @@
+Name: Josh Kretschmar
+Student ID: 16939790
+
+/conf/settings.php
+/admin.html
+/Admin.js
+/assign.php
+/book.php
+/booking.html
+/MakeBooking.js
+/showPickUps.php
+
+For the Taxi Booking System:
+Enter your details into the appropriate text boxes.
+Press "Make Booking" Button.
+Your details will be added to the booking database.
+
+For the Admin Taxi System:
+The "Show Pick-Up Requests" will show all the pick-up
+requests that need to be assigned and need to be picked
+up in 2 hours.
+If you want to assign yourself to a job then type in
+the reference number and press "Assign Taxi".
+This will assign the given reference job.

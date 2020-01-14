@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="content_type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="Admin.js"></script>
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <h1>Admin Taxi Booking System</h1>
+    <!--Name: Joshua Kretschmar
+        Student ID: 16939790 -->
+
+        <!-- Show Pick Up Button -->
+    <div>
+        <input type="submit" value="Show Pick-Up Requests" onClick="showPickUp();" />
+    </div>
+    <br>
+        <!-- Assign reference number Button -->
+    <div>
+        <label for="reference">Reference Number: </label>
+        <input type="text" name="reference" id="reference" />
+        <input type="submit" value="Assign Taxi" onClick="assign();" />
+    </div>
+    <br>
+    <div id="bookings"></div>
+
+</body>
+
+</html>

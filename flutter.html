@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Programming Portfolio 16939790</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body class="light-grey">
+    <div class="content" style="max-width: 1400ox;">
+        <!-- Header -->
+        <header class="container center padding-32">
+            <h1><b>Programming Portfolio</b></h1>
+            <p>COMP710 - 16939790 - Joshua Kretschmar</p>
+        </header>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Programming Portfolio</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="c++.html">C++</a></li>
+                        <li><a href="java.html">Java</a></li>
+                        <li><a href="python.html">Python</a></li>
+                        <li><a href="php.html">Web Development</a></li>
+                        <li class="active"><a href="flutter.html">Flutter/Dart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Blog Entries -->
+        <div class="col l8 s12">
+            <!-- Blog Entry -->
+            <div class="card-4 margin white">
+                <div class="container">
+
+                    <h3><b>Bee App</b></h3>
+                </div>
+
+                <div class="container">
+                    <p>
+                        (Due to a signed NDA, I'm not able show any code for this project)
+                    </p>
+                    <p>
+                        For Research and Development paper we worked for a company called Bee Intelligence. The client
+                        wanted to have a phone app for beehive owners to quickly and easily information on how their
+                        employees and hives are going. All the information that needs to be displayed is already stored
+                        on Bee Intelligence's servers. Our client wanted us to make a data object that he would fit his
+                        data into and send to us. Then it is displayed in easy to read charts. This app was made using
+                        the Flutter Framework. This meant that we can build the app in Android and iOS. This was a
+                        requirement of our client. Since this was a big group project, I'll explain the parts I worked
+                        on.
+                    </p>
+                    <p>
+                        First, I created the data object that would store the information used by the chart. It was
+                        important to get this object finished as soon as possible because it is a lot of work to change
+                        things after the fact.
+                    </p>
+                    <p>
+                        A lot of peer-programming was done on the app as well. Most of the debugging for all the
+                        features involved peer-programming. As well as the design implementation of the app.
+                    </p>
+                    <p>
+                        Our client wanted the app to eventually have internationalization, so I started an implemenation
+                        of langauge selection. For testing purposes the app can change between English and German. The
+                        current language file is almost certainly incorrect German, however, the proof of concept is
+                        there. It is designed for an easy addition of any language for Bee Intelligence's developers.
+                        Each langauge has their own JSON file that is referenced for every string in the app. Changing
+                        language simply changes which JSON file to retrieve the strings from. This is how Android handle
+                        all their strings, however, this had to be implemented for a Flutter framework.
+                    </p>
+                    <p>
+                        By default, when the app is closed and reopened again, settings like language, filters, sorting
+                        aren't saved. I created a way for these settings to saved. This was done using the
+                        SharedPreferences package, which implements SharedPreferences on Android and NSUserDefaults on
+                        iOS. This was quite easy to set up. A SharedPreferences instance is created at the beginning of
+                        running the app. This instance then reads all the values there previously saved using a key.
+                        When a setting that should be saved changes, it is then saved into the SharedPreferences
+                        instance using a key.
+                    </p>
+                </div>
+
+                <img src="BeeApp.jpg" style="width:40%">
+                <img src="BarChart.jpg" style="width:40%">
+                <img src="StackedChart.jpg" style="width:40%">
+                <img src="Language.jpg" style="width:40%">
+            </div>
+        </div>
+</body>
+
+</html>
